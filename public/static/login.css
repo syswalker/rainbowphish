@@ -1,0 +1,13 @@
+form {
+	width: 35vw;
+	margin: 0 auto;
+}
+
+h2 {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.err, .success {
+	text-align: center;
+}

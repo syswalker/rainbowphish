@@ -1,0 +1,101 @@
+:root {
+  --dark-green: #46562c;        /* dark green - midtone */
+  --mustard-yellow: #c7a222;    /* mustard yellow - bright */
+  --dark-pale-orange: #ca8a00;  /* dark pale orange - bright */
+  --steel-grey: #53645f;        /* steel grey - midtone */
+  --pale-blue: #6c7ba6;         /* pale blue - midtone */
+  --sky-blue: #9cbbe9;          /* sky blue - bright */
+  --ocean-blue: #061a3a;        /* ocean blue - dark */
+  --fish-empire-green: #1e2e05;
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url('https://cdn.glitch.global/3ef380fa-f1a8-4460-b3ed-942f75598cd9/coolvetica%20rg.otf?v=1712011422374') format('opentype');
+}
+
+@font-face {
+  font-family: "Terminess";
+  src: url('https://cdn.glitch.global/3ef380fa-f1a8-4460-b3ed-942f75598cd9/terminess.ttf?v=1712017817866');
+}
+
+html, body {
+  background-color: var(--ocean-blue);
+  color: var(--sky-blue);
+
+  font-family: "sans-serif";
+  font-size: 1.2rem;
+}
+
+p, label, input, select, button, textarea {
+  font-family: monospace !important;
+}
+
+.navbar {
+  font-family: "Coolvetica";
+
+  border-bottom: 1rem solid var(--dark-pale-orange);
+  background-color: var(--fish-empire-green);
+
+  padding: 0px 15px;
+}
+
+.logo {
+  width: 50px;
+  margin-top: -18px;
+  filter: invert(54%) sepia(60%) saturate(530%) hue-rotate(9deg) brightness(104%) contrast(93%);
+}
+
+.navbar-title {
+  font-size: 50px;
+  color: var(--sky-blue);
+}
+
+button, select, input {
+  width: 100%;
+  border-radius: 0px !important;
+}
+
+.btn-warning {
+  background-color: var(--dark-pale-orange) !important;
+  border: none;
+
+  transition: all ease 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: orange !important;
+  color: #111;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: calc(100vh - 95px - 5rem);
+  padding-bottom: 20px;
+  font-size: .75rem;
+}
+
+h2 {
+  font-family: monospace;
+}
+
+.input-element {
+  color: black !important;
+  background-color: var(--pale-blue) !important;
+  border: 1px solid var(--sky-blue) !important;
+  border-radius: 0px !important;
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--dark-pale-orange);
+  color: black;
+  height: 20px;
+  font-size: 13px;
+  font-family: monospace;
+  text-align: right;
+}
